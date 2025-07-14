@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/37ada9cac6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst and ML developer</p>
+                <h1>Hi, I'm <span>Shishir Singh Thakuri </span><br>From Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------about--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/shishir.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="justified">Hi, I’m Shishir Singh Thakuri from Banke, Nepal. I recently graduated with a B.Sc. in Computer Science and Information Technology (CSIT). I have a strong interest in Data Analysis and Machine Learning, with skills in Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, SQL, and basic knowledge of deep learning and model deployment.
+                        <br>
+                        Passionate and motivated CSIT graduate with a strong interest in Data Analysis and Machine Learning. Skilled in building predictive models, analyzing complex datasets, and continuously learning new technologies. Proficient in Python, SQL, and essential data science libraries. Fluent in Nepali, English, and Hindi, with strong communication skills and a desire to contribute to impactful, real-world projects as a growing developer.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br></li>
+                            <li><span>Pandas</span><br></li>
+                            <li><span>Numpy</span><br></li>
+                            <li><span>Matplotlib</span><br></li>
+                            <li><span>Seaborm</span><br></li>
+                            <li><span>Scikit-learn</span><br></li>
+                            <li><span>Basic knowledge of Deep learning</span><br></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Data Analyst (05/02/2025 – 21/04/2025)</span><br>Internship at Tech Decoder Nepal Pvt Ltd., Kohalpur Banke</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>+2 from holyland secondary school nepalgunj,Banke</li>
+                            <li><span>2025</span><br>B.sc Csit from Mahendra multiple campus nepalgunj,Banke</li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------contact------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+
+
+                    <h1>Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>shishirsinghthakuri058@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9825571038
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/shishir.xsr"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ccerthakuri/"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shishirsinghthakuri/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="images/Shishir Singh Thakuri.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 Shisihr Singh Thakuri.<i class="fa-solid fa-heart"></i> All rights reserved.</p>
+        </div>
+    </div>
+    <!-- ........................services........ -->
+    <script src="javascript.js">
+
+    </script>
+    
+
+</html>
